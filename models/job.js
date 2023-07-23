@@ -8,15 +8,26 @@ const JobSchema = new Schema({
         type: String,
         required: [true, 'Title field us is required']
     },
+
     description:{
         type: String,
         required: [true, 'Title field us is required']
+    },
+
+    Location:{
+        type: String,
+        required: [true, 'Title field us is required']
+
+    },
+    Salary:{
+        type: String,
+        required: [true, 'Title field us is required']
+
     },
     IsAvailable:{
         type: Boolean,
         default: true
     }
-
 })
 
 const Job = mongoose.model('jobs', JobSchema)
